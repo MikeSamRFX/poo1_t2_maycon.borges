@@ -13,10 +13,10 @@ public Produto(int id, String nome, String fabricante, double preco) {
     }
 
     
-    public static void apresentarProduto(Produto p) {
-        System.out.println(p.id);
-        System.out.println(p.nome);
-        System.out.println(p.fabricante);
-        System.out.println(p.preco);
+    public void apresentarProduto() {
+        System.out.println(this.id);
+        System.out.println(this.nome);
+        System.out.println(this.fabricante);
+        System.out.println(this.preco);
     }
 }

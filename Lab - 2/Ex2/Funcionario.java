@@ -12,12 +12,10 @@ public class Funcionario{
         this.data_n = data_n;
     }
 
-    
-
-    public static void apresentarFuncionario(Funcionario f){
-        System.out.println(f.id);
-        System.out.println(f.nome);
-        System.out.println(f.data_i);
-        System.out.println(f.data_n);
+    public void apresentarFuncionario(){
+        System.out.println(this.id);
+        System.out.println(this.nome);
+        System.out.println(this.data_i);
+        System.out.println(this.data_n);
     }
 }

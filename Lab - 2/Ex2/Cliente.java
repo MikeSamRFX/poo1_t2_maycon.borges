@@ -12,11 +12,11 @@ public class Cliente{
         this.cep = cep;
     }
 
-    public static void apresentarCliente(Cliente c){
-        System.out.println(c.id);
-        System.out.println(c.nome);
-        System.out.println(c.data_n);
-        System.out.println(c.cep);
+    public void apresentarCliente(){
+        System.out.println(this.id);
+        System.out.println(this.nome);
+        System.out.println(this.data_n);
+        System.out.println(this.cep);
     }
 
 }

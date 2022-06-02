@@ -1,39 +1,40 @@
 public class Ponto {
     
-    private double x, y;
+    private int x, y;
 
-    public Ponto(double x, double y) {
+    public Ponto(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
+    public Ponto(){
+        //inicia ponto vazio
+    }
+
     public void imprime_ponto(){
-        System.out.printf("(%.0f,%.0f)", x, y);
+        System.out.printf("(%d,%d)", this.x, this.y);
     }
 
-    public static Ponto soma_ponto(Ponto p1, Ponto p2){
-        double newX = p1.x + p2.x;
-        double newY = p1.y + p2.y;
-        Ponto p3 = new Ponto(newX, newY);
-        return p3;
+    public void soma_ponto(Ponto p1, Ponto p2){
+        this.x = p1.x + p2.x;
+        this.y = p1.y + p2.y;
     }
-
+    
     public static void soma_ponto(Ponto p1, Ponto p2, Ponto p3){
-        double newX = p1.x + p2.x;
-        double newY = p1.y + p2.y;
+        int newX = p1.x + p2.x;
+        int newY = p1.y + p2.y;
         p3.x = newX;
         p3.y = newY;
     }
 
-    public static void multiplica_ponto(Ponto p1, int valor){
-        double newX = p1.x + valor;
-        double newY = p1.y + valor;
-        Ponto newP = new Ponto(newX, newY);
-        newP.imprime_ponto();
+    public void multiplica_ponto(int valor){
+        this.x = this.x * valor;
+        this.y = this.y * valor;
     }
 
-    public static double calc_area(Ponto p1, Ponto p2){
-        double currentX, currentY;
+    
+    public static int calc_area(Ponto p1, Ponto p2){
+        int currentX, currentY;
         if(p1.x == p2.x || p1.y == p2.y){
             throw new RuntimeException("Erro Area = 0");
         }
@@ -44,7 +45,7 @@ public class Ponto {
         if(p1.y > p2.y) currentY = p1.y - p2.y;
         else currentY = p2.y - p1.y;
 
-        return currentX * currentY;
+        return currentY * currentX;
     }
 
     public void inc_dir(char dir){
@@ -83,19 +84,19 @@ public class Ponto {
         }
     }
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 
-    public void setX(double x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    public void setY(double y) {
+    public void setY(int y) {
         this.y = y;
     }
 
