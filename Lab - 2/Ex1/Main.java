@@ -23,6 +23,12 @@ public class Main {
         }else{
             System.out.println(p2.nome + str2 + p2.carteira);
         }
+
+        // ------------------------------------------------------
+        
+        Carro c1 = new Carro("Fiat", "Uno com escada", "ABC1234");
+        c1.acelerar();
+        c1.frear();
     }
 
 }
