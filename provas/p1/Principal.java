@@ -1,4 +1,3 @@
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Principal {
@@ -44,6 +43,7 @@ public class Principal {
             }
             temp.print_circ();
         }
+
 
 
         System.out.println();
