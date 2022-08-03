@@ -1,9 +1,10 @@
 public class Circulo {
     Ponto center;
     double raio;
+    // check:<<<erro: get/sets>>>>
 
     public Circulo (){
-        this.center = null;
+        this.center = null;// check:<<<erro: melhor não fazer isso... pois ao chamar o print dá erro>>>>
         this.raio = 0;
     }
 

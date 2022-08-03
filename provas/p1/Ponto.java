@@ -13,4 +13,8 @@ public class Ponto {
     public int getY() {
         return y;
     }
+
+    // check:<<<erro: sem especificação de modifier (private)>>>>
+    // check:<<<erro: sem set>>>>
+
 }

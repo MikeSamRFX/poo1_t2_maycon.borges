@@ -8,7 +8,7 @@ public class Principal {
         int y = input.nextInt();
         System.out.print("Insira o raio do cirulo :");
         double r = input.nextDouble();
-
+ 
         Ponto p1 = new Ponto(x,y);
         Circulo circ1 = new Circulo(p1,r);
 
@@ -38,10 +38,10 @@ public class Principal {
         Circulo menor = new Circulo( 2147483647);
         for(int i = 0; i < n; i++){
             Circulo temp = vetor[i];
-            if(temp.raio < menor.raio){
+            if(temp.raio < menor.raio){// check:<<<erro: era para medir a área, não o raio>>>>
                 menor = temp;
             }
-            temp.print_circ();
+            temp.print_circ();// check:<<<erro: está mostrando a todos os passos do loop>>>>
         }
 
 
